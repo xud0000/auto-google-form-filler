@@ -1,36 +1,55 @@
 # Auto Google Form Filler
 
-> 🔧 自動填寫 Google 表單的 Python 工具，支援單選、複選、隨機選項與多份提交。適用於模擬測試與學術自動化實驗。
+> 🔧 自動填寫 Google 表單的 Python 工具，支援單選、複選、隨機選項與多份提交。適用於模擬測試、自動化實驗或資料填答練習。
 
 ---
 
 ## 🎯 專案目的
 
-本工具幫助學生進行問卷資料收集模擬、填答行為分析與自動化腳本練習。以 `Python` 搭配 `Selenium` 與 `multiprocessing` 撰寫，具備簡單的互動介面與可調參數設計。
+本工具協助使用者模擬大量問卷填寫，用於教學、測試或研究用途。  
+使用 `Python` 撰寫，搭配 `Selenium` 與 `multiprocessing`，提供基本數量控制，支援自動填答、隨機選項與高效率提交。
 
 ---
 
 ## 🧩 功能特色
 
-- ✅ 自動判別題目型態（單選/複選）
-- ✅ 支援隨機選項選擇
-- ✅ 支援多份填寫（可指定份數）
-- ✅ 支援多執行緒並行處理（提升填表效率）
-- ✅ 可切換是否顯示瀏覽器（headless 模式）
+- ✅ 自動辨識題目型態（單選 / 複選）
+- ✅ 隨機選項填答
+- ✅ 支援多份填寫與自訂次數
+- ✅ 多執行緒同時填寫，提高效率
+- ✅ 可啟用 Headless 模式（背景執行）
+- ✅ 已提供 Windows `.exe` 執行檔，無須安裝 Python
 
 ---
 
-## 🔧 環境需求
+## 📥 Windows EXE 下載
 
-- Python 3.7+
-- Chrome 瀏覽器
-- ChromeDriver（需與 Chrome 版本相符）
-- pip 套件管理工具
+👉 [點我前往 Releases 下載 EXE](https://github.com/xud0000/auto-google-form-filler/releases)
+
+### 🔹 執行方式（免安裝 Python）：
+
+1. 下載檔案 `auto_form_windows_x64_v1.0.0.exe`
+2. 直接雙擊執行（程式將自動打開 Google 表單並填寫）
+3. 如出現 Windows 安全警告，請點「更多資訊」→「仍要執行」
 
 ---
 
-## 📦 安裝方式
+## 🛠 原始碼使用方式
 
-1. 安裝必要套件：
-   ```bash
-   pip install -r requirements.txt
+若需自行修改表單網址、填寫邏輯等，可直接運行 Python 原始碼：
+
+```bash
+pip install -r requirements.txt
+python auto_form.py
+```
+
+## 🔧 執行環境需求
+
+- 作業系統：Windows / macOS / Linux
+- Python：3.7 或以上版本
+- 瀏覽器：Google Chrome
+- 驅動程式：對應版本的 ChromeDriver
+
+## 📜 授權 License
+
+本專案以 [MIT License](https://opensource.org/licenses/MIT) 授權開源。
